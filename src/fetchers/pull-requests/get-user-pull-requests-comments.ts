@@ -1,0 +1,51 @@
+import { Console, Effect, pipe } from 'effect';
+import {
+  type EffectResultSuccess,
+  OctokitLayer,
+  type RepoArgs,
+} from 'effect-octokit-layer';
+import { greenBright } from 'picocolors';
+
+import { getEventsReactions } from '../../reactions/get-reactions-from-event.js';
+
+export type GetUserPullRequestsCommentsResult = EffectResultSuccess<
+  typeof getUserPullRequestsComments
+>;
+
+export const getUserPullRequestsComments = (
+  username: string,
+  repos: RepoArgs[],
+  verbose: boolean,
+) =>
+  pipe(
+    Effect.gen(function* () {
+      const userComments = yield* pipe(
+        Effect.forEach(repos, (repo) =>
+          Effect.gen(function* () {
+            const { pulls } = OctokitLayer.repo(repo);
+
+            if (verbose) {
+              yield* Console.info(
+                `- ℹ️  Getting pull requests comments for ${greenBright(`${repo.owner}/${repo.repo}`)}.`,
+              );
+            }
+            const repoPullsRequestsComments = yield* pulls.comments(2);
+            return repoPullsRequestsComments.filter(
+              (comment) => comment.user.login === username,
+            );
+          }),
+        ),
+      );
+
+      const allComments = userComments.flat();
+      const reactions = getEventsReactions(allComments);
+
+      return { reactions, comments: allComments };
+    }),
+    Console.withTime(
+      `☑️  Fetching ${greenBright(username)} pull requests comments`,
+    ),
+    Effect.withSpan('get-user-pull-requests-comments', {
+      attributes: { username },
+    }),
+  );
