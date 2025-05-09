@@ -11,7 +11,7 @@ import type {
   UserReposResult,
 } from '../fetchers/index.js';
 import type { Reactions } from '../reactions/reactions.type.js';
-import type { GithubUserStats } from './user-stats.type.js';
+import type { GithubUserStats } from '../types/user-stats.type.js';
 
 type UserStats = {
   profile: UserProfileResult;

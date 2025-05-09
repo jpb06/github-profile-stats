@@ -2,7 +2,7 @@ import { Console, Effect, pipe } from 'effect';
 import { type EffectResultSuccess, OctokitLayer } from 'effect-octokit-layer';
 import { greenBright } from 'picocolors';
 
-import { getEventsReactions } from '../../reactions/get-reactions-from-event.js';
+import { mergeEventsReactions } from '../../reactions/merge-events-reactions.js';
 
 export type GetUserIssuesResult = EffectResultSuccess<typeof getUserIssues>;
 
@@ -40,7 +40,7 @@ export const getUserIssues = (username: string, verbose: boolean) =>
           }),
       );
 
-      const reactions = getEventsReactions(userComments.flat());
+      const reactions = mergeEventsReactions(userComments.flat());
 
       return {
         reactions,

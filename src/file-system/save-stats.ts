@@ -3,18 +3,19 @@ import { compareDesc, format, parse } from 'date-fns';
 import { Console, Effect, pipe } from 'effect';
 import { greenBright } from 'picocolors';
 
-import type { GithubUserStats } from './../workflow/user-stats.type.js';
+import type { GithubUserStats } from '../types/user-stats.type.js';
 import { printDiff } from './print-diff.js';
 
-const getDate = (file: string) => file.split('.')[0].split('_')[1];
+const extractDateFromFilename = (file: string) =>
+  parse(file.split('.')[0].split('_')[1], 'dd-MM-yy', new Date());
 
-const sortFiles = (files: string[]) =>
+const getNewestFile = (files: string[]) =>
   files.sort((a, b) => {
-    const dateA = parse(getDate(a), 'dd-MM-yy', new Date());
-    const dateB = parse(getDate(b), 'dd-MM-yy', new Date());
+    const dateA = extractDateFromFilename(a);
+    const dateB = extractDateFromFilename(b);
 
     return compareDesc(dateA, dateB);
-  });
+  })[0];
 
 export const saveStats = (username: string, stats: GithubUserStats) =>
   pipe(
@@ -30,8 +31,8 @@ export const saveStats = (username: string, stats: GithubUserStats) =>
       yield* writeFileString(filePath, JSON.stringify(stats, null, 2));
 
       if (files.length > 0) {
-        const sortedFilesByDateDesc = sortFiles(files);
-        const previousFilePath = `./data/${sortedFilesByDateDesc[0]}`;
+        const newestFile = getNewestFile(files);
+        const previousFilePath = `./data/${newestFile}`;
 
         yield* printDiff(previousFilePath, filePath);
       }

@@ -5,7 +5,7 @@ type EventWithMaybeReactions = {
   reactions?: Reactions;
 };
 
-export const getEventsReactions = (
+export const mergeEventsReactions = (
   eventWithReactions: EventWithMaybeReactions[],
 ) =>
   eventWithReactions.reduce<Reactions>((result, comment) => {

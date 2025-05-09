@@ -6,7 +6,7 @@ import {
 } from 'effect-octokit-layer';
 import { greenBright } from 'picocolors';
 
-import { getEventsReactions } from '../../reactions/get-reactions-from-event.js';
+import { mergeEventsReactions } from '../../reactions/merge-events-reactions.js';
 
 export type GetUserPullRequestsCommentsResult = EffectResultSuccess<
   typeof getUserPullRequestsComments
@@ -38,7 +38,7 @@ export const getUserPullRequestsComments = (
       );
 
       const allComments = userComments.flat();
-      const reactions = getEventsReactions(allComments);
+      const reactions = mergeEventsReactions(allComments);
 
       return { reactions, comments: allComments };
     }),
