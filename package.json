@@ -25,7 +25,8 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/bun": "latest",
-    "npm-check-updates": "18.0.1"
+    "npm-check-updates": "18.0.1",
+    "readme-package-icons": "1.2.1"
   },
   "scripts": {
     "update-deps": "bunx npm-check-updates --root --format group -i",
@@ -34,6 +35,7 @@
     "format-ci": "biome format ./src",
     "lint": "biome lint ./src",
     "lint-fix": "biome lint --write ./src",
-    "dev": "bun ./src/index.ts"
+    "dev": "bun ./src/index.ts",
+    "sync-icons": "bun generateReadmeIcons -h 50"
   }
 }
