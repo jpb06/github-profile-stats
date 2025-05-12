@@ -1,7 +1,7 @@
 import { FileSystem } from '@effect/platform';
 import { compareDesc, format, parse } from 'date-fns';
 import { Console, Effect, pipe } from 'effect';
-import { greenBright } from 'picocolors';
+import colors from 'picocolors';
 
 import type { GithubUserStats } from '../types/user-stats.type.js';
 import { printDiff } from './print-diff.js';
@@ -24,7 +24,7 @@ export const saveStats = (username: string, stats: GithubUserStats) =>
 
       const filePath = `./data/${username}-stats_${format(new Date(), 'dd-MM-yy')}.json`;
       yield* Console.info(
-        `✅ ${greenBright(username)} stats retrieved - saving to '${greenBright(filePath)}'`,
+        `✅ ${colors.greenBright(username)} stats retrieved - saving to '${colors.greenBright(filePath)}'`,
       );
 
       const files = yield* readDirectory('./data');

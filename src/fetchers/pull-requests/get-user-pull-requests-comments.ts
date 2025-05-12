@@ -4,7 +4,7 @@ import {
   OctokitLayer,
   type RepoArgs,
 } from 'effect-octokit-layer';
-import { greenBright } from 'picocolors';
+import colors from 'picocolors';
 
 import { mergeEventsReactions } from '../../reactions/merge-events-reactions.js';
 
@@ -26,7 +26,7 @@ export const getUserPullRequestsComments = (
 
             if (verbose) {
               yield* Console.info(
-                `- ℹ️  Getting pull requests comments for ${greenBright(`${repo.owner}/${repo.repo}`)}.`,
+                `- ℹ️  Getting pull requests comments for ${colors.greenBright(`${repo.owner}/${repo.repo}`)}.`,
               );
             }
             const repoPullsRequestsComments = yield* pulls.comments(2);
@@ -43,7 +43,7 @@ export const getUserPullRequestsComments = (
       return { reactions, comments: allComments };
     }),
     Console.withTime(
-      `☑️  Fetching ${greenBright(username)} pull requests comments`,
+      `☑️  Fetching ${colors.greenBright(username)} pull requests comments`,
     ),
     Effect.withSpan('get-user-pull-requests-comments', {
       attributes: { username },

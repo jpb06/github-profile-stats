@@ -1,12 +1,12 @@
 import { Command } from '@effect/platform';
 import { Console, Effect, pipe } from 'effect';
-import { bgGreenBright } from 'picocolors';
+import colors from 'picocolors';
 
 export const printDiff = (oldFilePath: string, newFilePath: string) =>
   pipe(
     Effect.gen(function* () {
       yield* Console.info('');
-      yield* Console.info(bgGreenBright(' Diff '));
+      yield* Console.info(colors.bgGreenBright(' Diff '));
 
       const cmd = Command.make('jsondiffpatch', oldFilePath, newFilePath);
       const output = yield* Command.string(cmd);

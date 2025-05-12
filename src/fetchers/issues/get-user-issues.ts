@@ -1,6 +1,6 @@
 import { Console, Effect, pipe } from 'effect';
 import { type EffectResultSuccess, OctokitLayer } from 'effect-octokit-layer';
-import { greenBright } from 'picocolors';
+import colors from 'picocolors';
 
 import { mergeEventsReactions } from '../../reactions/merge-events-reactions.js';
 
@@ -24,7 +24,7 @@ export const getUserIssues = (username: string, verbose: boolean) =>
 
             if (verbose) {
               yield* Console.info(
-                `- ℹ️  Getting ${greenBright(`${owner}/${repo}`)} issue ${issue.number} comments.`,
+                `- ℹ️  Getting ${colors.greenBright(`${owner}/${repo}`)} issue ${issue.number} comments.`,
               );
             }
             const comments = yield* OctokitLayer.repo({
@@ -50,7 +50,7 @@ export const getUserIssues = (username: string, verbose: boolean) =>
         },
       };
     }),
-    Console.withTime(`☑️  Fetched ${greenBright(username)} issues comments`),
+    Console.withTime(`☑️  Fetched ${colors.greenBright(username)} issues comments`),
     Effect.withSpan('get-user-issues', {
       attributes: { username },
     }),

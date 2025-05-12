@@ -4,7 +4,7 @@ import {
   OctokitLayer,
   type UserRepositoriesResult,
 } from 'effect-octokit-layer';
-import { greenBright } from 'picocolors';
+import colors from 'picocolors';
 
 import { octokitUserRepoToLayerRepoArgs } from './octokit-user-repo-to-repo-args.js';
 
@@ -23,7 +23,7 @@ export const getReposLanguagesBytes = (
 
         if (verbose) {
           yield* Console.info(
-            `- ℹ️  Getting languages bytes for ${greenBright(`${repo.owner}/${repo.repo}`)}.`,
+            `- ℹ️  Getting languages bytes for ${colors.greenBright(`${repo.owner}/${repo.repo}`)}.`,
           );
         }
 

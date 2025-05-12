@@ -1,6 +1,6 @@
 import { Console, Effect, pipe } from 'effect';
 import { type EffectResultSuccess, OctokitLayer } from 'effect-octokit-layer';
-import { greenBright } from 'picocolors';
+import colors from 'picocolors';
 
 import { mapUserReposResult } from './map-user-repos-result.js';
 
@@ -23,6 +23,6 @@ export const getUserRepos = (username: string) =>
         userRepos,
       };
     }),
-    Console.withTime(`☑️  Fetched ${greenBright(username)} repositories`),
+    Console.withTime(`☑️  Fetched ${colors.greenBright(username)} repositories`),
     Effect.withSpan('get-user-repos', { attributes: { username } }),
   );

@@ -1,6 +1,6 @@
 import { Console, Effect, pipe } from 'effect';
 import { type EffectResultSuccess, OctokitLayer } from 'effect-octokit-layer';
-import { greenBright } from 'picocolors';
+import colors from 'picocolors';
 
 export type GetPullRequestsCountResult = EffectResultSuccess<
   typeof getUserPullRequestsCount
@@ -30,7 +30,7 @@ export const getUserPullRequestsCount = (username: string) =>
         reviewed: reviewedPullRequests,
       }),
     ),
-    Console.withTime(`☑️  Fetched ${greenBright(username)} pull requests count`),
+    Console.withTime(`☑️  Fetched ${colors.greenBright(username)} pull requests count`),
     Effect.withSpan('get-user-pull-requests-count', {
       attributes: { username },
     }),
