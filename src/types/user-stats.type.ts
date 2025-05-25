@@ -1,15 +1,8 @@
 import type { Reactions } from '../reactions/reactions.type.js';
 
-type Topic = { name: string; count: number };
+export type Topic = { name: string; count: number };
 
-type LanguagesBytes = Record<string, number>;
-
-type DayActivity = {
-  commitsCreated: number;
-  pullRequestsCreated: number;
-  issuesCreated: number;
-  commentsCreated: number;
-};
+export type LanguageBytes = { language: string; bytes: number };
 
 export type GithubUserStats = {
   name: string | null;
@@ -17,7 +10,7 @@ export type GithubUserStats = {
   location: string | null;
   company: string | null;
   sizeInKb: number;
-  bytesByLanguage: LanguagesBytes;
+  bytesByLanguage: LanguageBytes[];
   social: {
     orgs: number;
     following: number;
@@ -27,7 +20,6 @@ export type GithubUserStats = {
     reactions: Reactions;
     comments: number;
   };
-  activityPerDay: Record<string, DayActivity>;
   git: {
     publicRepos: number;
     publicGists: number;
@@ -48,4 +40,5 @@ export type GithubUserStats = {
     releases: number;
   };
   topics: Topic[];
+  date: string;
 };

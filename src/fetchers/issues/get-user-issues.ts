@@ -50,7 +50,9 @@ export const getUserIssues = (username: string, verbose: boolean) =>
         },
       };
     }),
-    Console.withTime(`☑️  Fetched ${colors.greenBright(username)} issues comments`),
+    Console.withTime(
+      `☑️  Fetched ${colors.greenBright(username)} issues comments`,
+    ),
     Effect.withSpan('get-user-issues', {
       attributes: { username },
     }),

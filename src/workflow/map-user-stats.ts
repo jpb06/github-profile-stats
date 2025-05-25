@@ -1,3 +1,4 @@
+import { formatISO } from 'date-fns';
 import type { UserProfileResult } from 'effect-octokit-layer';
 
 import type {
@@ -39,35 +40,48 @@ export const mapUserStats = ({
   userPullRequestsCount,
   releases,
   issues,
-}: UserStats): GithubUserStats => ({
-  name: profile.name,
-  onGithubSince: profile.created_at,
-  location: profile.location,
-  company: profile.company,
-  sizeInKb: userReposStats.sizeInKb,
-  bytesByLanguage: languagesBytes,
-  topics: userReposStats.topics,
-  social: {
-    following: profile.following,
-    followers: profile.followers,
-    stargazers: userReposStats.stargazers,
-    watchers: userReposStats.watchers,
-    orgs: 0,
-    comments: comments.length,
-    reactions,
-  },
-  activityPerDay: {} as never,
-  git: {
-    publicRepos: profile.public_repos,
-    publicGists: profile.public_gists,
-    tags: tags.flatMap(({ tags }) => tags).length,
-    commits: userCommitsCount,
-    forks: userRepos.reduce((result, repo) => result + (repo.forks ?? 0), 0),
-    issues: {
-      closed: issues.closed.length,
-      opened: issues.open.length,
+}: UserStats): GithubUserStats => {
+  const languagesSortedByBytesDesc = Object.keys(languagesBytes)
+    .sort((a, b) => (languagesBytes[a] > languagesBytes[b] ? -1 : 1))
+    .map((key) => ({
+      language: key,
+      bytes: languagesBytes[key],
+    }));
+
+  const sortedTopicsByDescCount = userReposStats.topics.sort((a, b) =>
+    a.count > b.count ? -1 : 1,
+  );
+
+  return {
+    name: profile.name,
+    onGithubSince: profile.created_at,
+    location: profile.location,
+    company: profile.company,
+    sizeInKb: userReposStats.sizeInKb,
+    bytesByLanguage: languagesSortedByBytesDesc,
+    topics: sortedTopicsByDescCount,
+    social: {
+      following: profile.following,
+      followers: profile.followers,
+      stargazers: userReposStats.stargazers,
+      watchers: userReposStats.watchers,
+      orgs: 0,
+      comments: comments.length,
+      reactions,
     },
-    pullRequests: userPullRequestsCount,
-    releases: releases.flatMap(({ releases }) => releases).length,
-  },
-});
+    git: {
+      publicRepos: profile.public_repos,
+      publicGists: profile.public_gists,
+      tags: tags.flatMap(({ tags }) => tags).length,
+      commits: userCommitsCount,
+      forks: userRepos.reduce((result, repo) => result + (repo.forks ?? 0), 0),
+      issues: {
+        closed: issues.closed.length,
+        opened: issues.open.length,
+      },
+      pullRequests: userPullRequestsCount,
+      releases: releases.flatMap(({ releases }) => releases).length,
+    },
+    date: formatISO(new Date()),
+  };
+};
