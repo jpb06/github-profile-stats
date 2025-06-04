@@ -3,7 +3,7 @@
   "onGithubSince": "2013-03-08T12:48:59Z",
   "location": "Νίκαια",
   "company": "@posos-tech",
-  "sizeInKb": 377919,
+  "sizeInKb": 379484,
   "bytesByLanguage": [
     {
       "language": "TypeScript",
@@ -784,7 +784,7 @@
   ],
   "social": {
     "following": 51,
-    "followers": 28,
+    "followers": 29,
     "stargazers": 207,
     "watchers": 207,
     "orgs": 0,
@@ -805,20 +805,20 @@
     "publicRepos": 107,
     "publicGists": 6,
     "tags": 775,
-    "commits": 6668,
+    "commits": 6678,
     "forks": 49,
     "issues": {
-      "closed": 5,
-      "opened": 3
+      "closed": 6,
+      "opened": 2
     },
     "pullRequests": {
       "opened": 5,
       "closed": 44,
       "drafts": 6,
-      "merged": 1651,
-      "reviewed": 1854
+      "merged": 1661,
+      "reviewed": 1875
     },
     "releases": 260
   },
-  "date": "2025-05-25T17:50:13+02:00"
+  "date": "2025-05-28T17:35:30+02:00"
 }

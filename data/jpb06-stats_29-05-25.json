@@ -3,7 +3,7 @@
   "onGithubSince": "2013-03-08T12:48:59Z",
   "location": "Νίκαια",
   "company": "@posos-tech",
-  "sizeInKb": 377919,
+  "sizeInKb": 379370,
   "bytesByLanguage": [
     {
       "language": "TypeScript",
@@ -78,8 +78,13 @@
     },
     {
       "name": "nestjs",
+      "count": 5,
+      "weight": 53
+    },
+    {
+      "name": "prisma",
       "count": 4,
-      "weight": 50
+      "weight": 52
     },
     {
       "name": "ci-cd",
@@ -92,9 +97,9 @@
       "weight": 49
     },
     {
-      "name": "prisma",
+      "name": "monorepo",
       "count": 3,
-      "weight": 49
+      "weight": 47
     },
     {
       "name": "badges",
@@ -112,11 +117,6 @@
       "weight": 40
     },
     {
-      "name": "monorepo",
-      "count": 1,
-      "weight": 38
-    },
-    {
       "name": "multiple-databases",
       "count": 1,
       "weight": 38
@@ -132,24 +132,24 @@
       "weight": 38
     },
     {
+      "name": "react",
+      "count": 12,
+      "weight": 23
+    },
+    {
       "name": "typescript",
       "count": 22,
       "weight": 20
     },
     {
+      "name": "nextjs",
+      "count": 7,
+      "weight": 19
+    },
+    {
       "name": "material-ui",
       "count": 5,
       "weight": 17
-    },
-    {
-      "name": "nextjs",
-      "count": 6,
-      "weight": 16
-    },
-    {
-      "name": "react",
-      "count": 10,
-      "weight": 14
     },
     {
       "name": "git-tag",
@@ -207,6 +207,11 @@
       "weight": 10
     },
     {
+      "name": "graphql",
+      "count": 2,
+      "weight": 10
+    },
+    {
       "name": "nodejs",
       "count": 5,
       "weight": 9
@@ -217,17 +222,17 @@
       "weight": 9
     },
     {
+      "name": "nx",
+      "count": 2,
+      "weight": 9
+    },
+    {
       "name": "expressjs",
       "count": 3,
       "weight": 7
     },
     {
       "name": "codegen",
-      "count": 1,
-      "weight": 7
-    },
-    {
-      "name": "graphql",
       "count": 1,
       "weight": 7
     },
@@ -784,7 +789,7 @@
   ],
   "social": {
     "following": 51,
-    "followers": 28,
+    "followers": 29,
     "stargazers": 207,
     "watchers": 207,
     "orgs": 0,
@@ -804,21 +809,21 @@
   "git": {
     "publicRepos": 107,
     "publicGists": 6,
-    "tags": 775,
-    "commits": 6668,
+    "tags": 776,
+    "commits": 6679,
     "forks": 49,
     "issues": {
-      "closed": 5,
-      "opened": 3
+      "closed": 6,
+      "opened": 2
     },
     "pullRequests": {
-      "opened": 5,
+      "opened": 6,
       "closed": 44,
       "drafts": 6,
-      "merged": 1651,
-      "reviewed": 1854
+      "merged": 1662,
+      "reviewed": 1880
     },
-    "releases": 260
+    "releases": 261
   },
-  "date": "2025-05-25T17:50:13+02:00"
+  "date": "2025-05-29T15:02:33+02:00"
 }

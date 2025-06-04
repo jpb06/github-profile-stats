@@ -48,8 +48,8 @@ export const mapUserStats = ({
       bytes: languagesBytes[key],
     }));
 
-  const sortedTopicsByDescCount = userReposStats.topics.sort((a, b) =>
-    a.count > b.count ? -1 : 1,
+  const sortedTopicsByDescendingWeight = userReposStats.topics.sort((a, b) =>
+    a.weight > b.weight ? -1 : 1,
   );
 
   return {
@@ -59,7 +59,7 @@ export const mapUserStats = ({
     company: profile.company,
     sizeInKb: userReposStats.sizeInKb,
     bytesByLanguage: languagesSortedByBytesDesc,
-    topics: sortedTopicsByDescCount,
+    topics: sortedTopicsByDescendingWeight,
     social: {
       following: profile.following,
       followers: profile.followers,

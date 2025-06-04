@@ -1,6 +1,7 @@
 import type { UserRepositoriesResult } from 'effect-octokit-layer';
 
 type Topic = {
+  weight: number;
   count: number;
   name: string;
 };
@@ -26,8 +27,9 @@ export const mapUserReposResult = (repos: UserRepositoriesResult) =>
         const maybeAddedTopic = result.topics.find((t) => t.name === topic);
         if (maybeAddedTopic) {
           maybeAddedTopic.count += 1;
+          maybeAddedTopic.weight += repoStargazers;
         } else {
-          result.topics.push({ name: topic, count: 1 });
+          result.topics.push({ name: topic, count: 1, weight: repoStargazers });
         }
       }
 
