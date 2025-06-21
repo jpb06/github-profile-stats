@@ -30,7 +30,9 @@ export const getUserPullRequestsCount = (username: string) =>
         reviewed: reviewedPullRequests,
       }),
     ),
-    Console.withTime(`☑️  Fetched ${colors.greenBright(username)} pull requests count`),
+    Console.withTime(
+      `☑️  Fetched ${colors.greenBright(username)} pull requests count`,
+    ),
     Effect.withSpan('get-user-pull-requests-count', {
       attributes: { username },
     }),
