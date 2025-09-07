@@ -26,5 +26,8 @@
 	"typescript.preferences.importModuleSpecifier": "relative",
 	"[yaml]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
 	}
 }

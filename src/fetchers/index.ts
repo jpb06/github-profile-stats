@@ -7,5 +7,4 @@ export * from './repos/get-repos-languages-bytes.js';
 export * from './repos/get-repos-releases.js';
 export * from './repos/get-repos-tags.js';
 export * from './repos/get-user-repos.js';
-
 export * from './repos/map-user-repos-result.js';

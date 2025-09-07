@@ -12,29 +12,30 @@
     "node": "22.x"
   },
   "dependencies": {
-    "@effect/platform": "0.87.11",
-    "@effect/platform-node": "0.89.3",
+    "@effect/platform": "0.90.7",
+    "@effect/platform-node": "0.96.1",
     "date-fns": "4.1.0",
-    "effect": "3.16.12",
-    "effect-errors": "1.10.14",
-    "effect-octokit-layer": "1.12.1",
+    "effect": "3.17.13",
+    "effect-errors": "1.10.15",
+    "effect-octokit-layer": "1.13.0",
     "jsondiffpatch": "0.7.3",
     "picocolors": "1.1.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.1.1",
+    "@biomejs/biome": "2.2.3",
     "@types/bun": "latest",
-    "npm-check-updates": "18.0.1",
+    "npm-check-updates": "18.0.3",
     "readme-package-icons": "1.2.2",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "scripts": {
     "update-deps": "bunx npm-check-updates --root --format group -i",
     "type-check": "tsc --noEmit",
-    "format": "biome format --write ./src",
-    "format-ci": "biome format ./src",
-    "lint": "biome lint ./src",
-    "lint-fix": "biome lint --write ./src",
+    "check": "biome check .",
+    "format": "biome format --write .",
+    "format-ci": "biome format .",
+    "lint": "biome lint .",
+    "lint-fix": "biome lint --write .",
     "build-esm": "tsc --project tsconfig.esm.json",
     "dev": "bun ./src/index.ts",
     "sync-icons": "bun generateReadmeIcons -h 50"
