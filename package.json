@@ -12,19 +12,19 @@
     "node": "22.x"
   },
   "dependencies": {
-    "@effect/platform": "0.90.7",
+    "@effect/platform": "0.90.10",
     "@effect/platform-node": "0.96.1",
     "date-fns": "4.1.0",
-    "effect": "3.17.13",
+    "effect": "3.17.14",
     "effect-errors": "1.10.15",
     "effect-octokit-layer": "1.13.0",
     "jsondiffpatch": "0.7.3",
     "picocolors": "1.1.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.3",
+    "@biomejs/biome": "2.2.4",
     "@types/bun": "latest",
-    "npm-check-updates": "18.0.3",
+    "npm-check-updates": "18.3.0",
     "readme-package-icons": "1.2.2",
     "typescript": "5.9.2"
   },
