@@ -40,7 +40,10 @@ export const getUserIssues = (username: string, verbose: boolean) =>
           }),
       );
 
-      const reactions = mergeEventsReactions(userComments.flat());
+      const reactions = mergeEventsReactions([
+        ...userIssues,
+        ...userComments.flat(),
+      ]);
 
       return {
         reactions,
