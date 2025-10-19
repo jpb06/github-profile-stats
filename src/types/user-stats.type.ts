@@ -1,6 +1,6 @@
 import type { Reactions } from '../reactions/reactions.type.js';
 
-export type Topic = { name: string; count: number };
+export type Topic = { name: string; repos: string[]; weight: number };
 
 export type LanguageBytes = { language: string; bytes: number };
 

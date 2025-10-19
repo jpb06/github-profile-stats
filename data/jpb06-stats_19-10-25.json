@@ -1,0 +1,1271 @@
+{
+  "name": "jpb06",
+  "onGithubSince": "2013-03-08T12:48:59Z",
+  "location": "Νίκαια",
+  "company": "@posos-tech",
+  "sizeInKb": 402193,
+  "bytesByLanguage": [
+    {
+      "language": "TypeScript",
+      "bytes": 4196120
+    },
+    {
+      "language": "C#",
+      "bytes": 1365009
+    },
+    {
+      "language": "JavaScript",
+      "bytes": 1291214
+    },
+    {
+      "language": "C",
+      "bytes": 136615
+    },
+    {
+      "language": "NSIS",
+      "bytes": 99706
+    },
+    {
+      "language": "C++",
+      "bytes": 95005
+    },
+    {
+      "language": "HTML",
+      "bytes": 58550
+    },
+    {
+      "language": "CSS",
+      "bytes": 23946
+    },
+    {
+      "language": "Vue",
+      "bytes": 5566
+    },
+    {
+      "language": "Java",
+      "bytes": 4959
+    },
+    {
+      "language": "Dockerfile",
+      "bytes": 4445
+    },
+    {
+      "language": "ASP",
+      "bytes": 3657
+    },
+    {
+      "language": "Shell",
+      "bytes": 2240
+    },
+    {
+      "language": "Batchfile",
+      "bytes": 301
+    },
+    {
+      "language": "Pug",
+      "bytes": 52
+    },
+    {
+      "language": "Procfile",
+      "bytes": 32
+    }
+  ],
+  "topics": [
+    {
+      "name": "jest",
+      "weight": 88,
+      "repos": [
+        "coverage-badges-action",
+        "dev-friends-backend-starter",
+        "jest-badges-action",
+        "nest-prisma-monorepo",
+        "node-jest-badges",
+        "nuxt-ts-jest-starter",
+        "ts-paths-transform"
+      ]
+    },
+    {
+      "name": "github-actions",
+      "weight": 63,
+      "repos": [
+        "bump-package",
+        "coverage-badges-action",
+        "effect-action",
+        "effect-github-actions-layer",
+        "jest-badges-action"
+      ]
+    },
+    {
+      "name": "effect-ts",
+      "weight": 60,
+      "repos": [
+        "bump-package",
+        "coverage-badges-action",
+        "effect-action",
+        "effect-cloudflare-r2-layer",
+        "effect-errors",
+        "effect-github-actions-layer",
+        "effect-github-stats",
+        "effect-octokit-layer",
+        "extract-dependencies-from-sources",
+        "github-profile-stats",
+        "node-coverage-badges",
+        "remix-effect-errors",
+        "ts-paths-resolver"
+      ]
+    },
+    {
+      "name": "nestjs",
+      "weight": 53,
+      "repos": [
+        "dev-friends-backend",
+        "dev-friends-backend-starter",
+        "graphql-shop",
+        "nest-prisma-monorepo",
+        "nestjs-prisma-postgres-sandbox"
+      ]
+    },
+    {
+      "name": "prisma",
+      "weight": 52,
+      "repos": [
+        "dev-friends-backend-starter",
+        "graphql-shop",
+        "nest-prisma-monorepo",
+        "nestjs-prisma-postgres-sandbox"
+      ]
+    },
+    {
+      "name": "ci-cd",
+      "weight": 50,
+      "repos": [
+        "bump-package",
+        "jest-badges-action"
+      ]
+    },
+    {
+      "name": "monorepo",
+      "weight": 47,
+      "repos": [
+        "graphql-shop",
+        "nest-prisma-monorepo",
+        "nx-front-poc"
+      ]
+    },
+    {
+      "name": "badges",
+      "weight": 45,
+      "repos": [
+        "coverage-badges-action",
+        "jest-badges-action",
+        "node-jest-badges"
+      ]
+    },
+    {
+      "name": "test-coverage",
+      "weight": 41,
+      "repos": [
+        "coverage-badges-action",
+        "jest-badges-action"
+      ]
+    },
+    {
+      "name": "multiple-databases",
+      "weight": 38,
+      "repos": [
+        "nest-prisma-monorepo"
+      ]
+    },
+    {
+      "name": "proof-of-concept",
+      "weight": 38,
+      "repos": [
+        "nest-prisma-monorepo"
+      ]
+    },
+    {
+      "name": "rxjs",
+      "weight": 38,
+      "repos": [
+        "nest-prisma-monorepo"
+      ]
+    },
+    {
+      "name": "swagger-ui",
+      "weight": 38,
+      "repos": [
+        "nest-prisma-monorepo"
+      ]
+    },
+    {
+      "name": "react",
+      "weight": 24,
+      "repos": [
+        "auth0-silent-login",
+        "courses-management-flux-sandbox",
+        "courses-management-redux-sandbox",
+        "dev-friends-app-folder",
+        "dev-friends-workshop",
+        "graphql-shop",
+        "nx-front-poc",
+        "remix-effect-errors",
+        "tic-tac-toe",
+        "together",
+        "together-js",
+        "vacations-manager"
+      ]
+    },
+    {
+      "name": "typescript",
+      "weight": 20,
+      "repos": [
+        "auth-zero-sandbox",
+        "courses-management-flux-sandbox",
+        "courses-management-redux-sandbox",
+        "crevette-bot-ts",
+        "dowpro-replay-watcher-api",
+        "dowpro-replay-watcher-dal",
+        "github-lookup",
+        "imgBoard",
+        "kubot-dal",
+        "kuBot-ts",
+        "kubot-website-express",
+        "kubot-ws-angular",
+        "kubot-ws-api",
+        "node-message-broker",
+        "nuxt-ts-jest-starter",
+        "relic-chunky-parser",
+        "rsa-vault",
+        "swagger-typescript-types",
+        "together",
+        "together-api",
+        "ts-paths-resolver",
+        "ts-paths-transform"
+      ]
+    },
+    {
+      "name": "nextjs",
+      "weight": 20,
+      "repos": [
+        "auth0-silent-login",
+        "dev-friends-app-folder",
+        "dev-friends-workshop",
+        "graphql-shop",
+        "nx-front-poc",
+        "test-storybook-msw",
+        "tic-tac-toe"
+      ]
+    },
+    {
+      "name": "error-reporting",
+      "weight": 18,
+      "repos": [
+        "effect-errors",
+        "remix-effect-errors"
+      ]
+    },
+    {
+      "name": "source-maps",
+      "weight": 18,
+      "repos": [
+        "effect-errors",
+        "remix-effect-errors"
+      ]
+    },
+    {
+      "name": "material-ui",
+      "weight": 17,
+      "repos": [
+        "auth-zero-sandbox",
+        "dev-friends-starter",
+        "github-lookup",
+        "nx-front-poc",
+        "together"
+      ]
+    },
+    {
+      "name": "poc",
+      "weight": 16,
+      "repos": [
+        "effect-errors"
+      ]
+    },
+    {
+      "name": "spans",
+      "weight": 16,
+      "repos": [
+        "effect-errors"
+      ]
+    },
+    {
+      "name": "git-tag",
+      "weight": 15,
+      "repos": [
+        "bump-package"
+      ]
+    },
+    {
+      "name": "semver",
+      "weight": 15,
+      "repos": [
+        "bump-package"
+      ]
+    },
+    {
+      "name": "react-query",
+      "weight": 14,
+      "repos": [
+        "dev-friends-workshop",
+        "graphql-codegen-react-query",
+        "workshop-react-fcs"
+      ]
+    },
+    {
+      "name": "react-hooks",
+      "weight": 13,
+      "repos": [
+        "dev-friends-workshop",
+        "gapi-oauth-react-hooks",
+        "workshop-react-fcs"
+      ]
+    },
+    {
+      "name": "postgresql",
+      "weight": 11,
+      "repos": [
+        "crevetteBot",
+        "nestjs-prisma-postgres-sandbox"
+      ]
+    },
+    {
+      "name": "redux",
+      "weight": 10,
+      "repos": [
+        "auth-zero-sandbox",
+        "courses-management-redux-sandbox",
+        "github-lookup",
+        "together",
+        "workshop-react-fcs"
+      ]
+    },
+    {
+      "name": "testing-library",
+      "weight": 10,
+      "repos": [
+        "dev-friends-workshop",
+        "nx-front-poc"
+      ]
+    },
+    {
+      "name": "graphql",
+      "weight": 10,
+      "repos": [
+        "graphql-codegen-react-query",
+        "graphql-shop"
+      ]
+    },
+    {
+      "name": "nodejs",
+      "weight": 9,
+      "repos": [
+        "crevetteBot",
+        "KuBot",
+        "kuBot-ts",
+        "mongodb-generic-dal",
+        "swagger-typescript-types"
+      ]
+    },
+    {
+      "name": "workshop",
+      "weight": 9,
+      "repos": [
+        "dev-friends-backend-starter",
+        "dev-friends-workshop",
+        "workshop-react-fcs"
+      ]
+    },
+    {
+      "name": "nx",
+      "weight": 9,
+      "repos": [
+        "graphql-shop",
+        "nx-front-poc"
+      ]
+    },
+    {
+      "name": "expressjs",
+      "weight": 7,
+      "repos": [
+        "auth-zero-sandbox",
+        "github-lookup",
+        "together"
+      ]
+    },
+    {
+      "name": "codegen",
+      "weight": 7,
+      "repos": [
+        "graphql-codegen-react-query"
+      ]
+    },
+    {
+      "name": "vitest",
+      "weight": 6,
+      "repos": [
+        "coverage-badges-action"
+      ]
+    },
+    {
+      "name": "msw",
+      "weight": 6,
+      "repos": [
+        "dev-friends-workshop",
+        "test-storybook-msw"
+      ]
+    },
+    {
+      "name": "gapi",
+      "weight": 6,
+      "repos": [
+        "gapi-oauth-react-hooks"
+      ]
+    },
+    {
+      "name": "sso",
+      "weight": 6,
+      "repos": [
+        "gapi-oauth-react-hooks"
+      ]
+    },
+    {
+      "name": "testing-library-react-hooks",
+      "weight": 6,
+      "repos": [
+        "gapi-oauth-react-hooks"
+      ]
+    },
+    {
+      "name": "react-hook-form",
+      "weight": 6,
+      "repos": [
+        "nx-front-poc"
+      ]
+    },
+    {
+      "name": "sandbox",
+      "weight": 6,
+      "repos": [
+        "nx-front-poc"
+      ]
+    },
+    {
+      "name": "redux-thunk",
+      "weight": 5,
+      "repos": [
+        "auth-zero-sandbox",
+        "workshop-react-fcs"
+      ]
+    },
+    {
+      "name": "redux-saga",
+      "weight": 5,
+      "repos": [
+        "github-lookup",
+        "together"
+      ]
+    },
+    {
+      "name": "reactjs",
+      "weight": 4,
+      "repos": [
+        "auth-zero-sandbox",
+        "github-lookup"
+      ]
+    },
+    {
+      "name": "bootstrapper",
+      "weight": 4,
+      "repos": [
+        "dev-friends-starter"
+      ]
+    },
+    {
+      "name": "nextjs-starter",
+      "weight": 4,
+      "repos": [
+        "dev-friends-starter"
+      ]
+    },
+    {
+      "name": "functional-components",
+      "weight": 4,
+      "repos": [
+        "dev-friends-workshop"
+      ]
+    },
+    {
+      "name": "cloudflare",
+      "weight": 4,
+      "repos": [
+        "effect-cloudflare-r2-layer"
+      ]
+    },
+    {
+      "name": "cloudflare-r2",
+      "weight": 4,
+      "repos": [
+        "effect-cloudflare-r2-layer"
+      ]
+    },
+    {
+      "name": "code-analysis",
+      "weight": 4,
+      "repos": [
+        "extract-dependencies-from-sources"
+      ]
+    },
+    {
+      "name": "dependencies-collector",
+      "weight": 4,
+      "repos": [
+        "extract-dependencies-from-sources"
+      ]
+    },
+    {
+      "name": "data-access-layer",
+      "weight": 4,
+      "repos": [
+        "kubot-dal",
+        "mongodb-generic-dal",
+        "rsa-vault"
+      ]
+    },
+    {
+      "name": "coverage",
+      "weight": 4,
+      "repos": [
+        "node-jest-badges"
+      ]
+    },
+    {
+      "name": "api-rest",
+      "weight": 4,
+      "repos": [
+        "swagger-typescript-types"
+      ]
+    },
+    {
+      "name": "openapi",
+      "weight": 4,
+      "repos": [
+        "swagger-typescript-types"
+      ]
+    },
+    {
+      "name": "swagger",
+      "weight": 4,
+      "repos": [
+        "swagger-typescript-types"
+      ]
+    },
+    {
+      "name": "tailwindcss",
+      "weight": 4,
+      "repos": [
+        "tic-tac-toe"
+      ]
+    },
+    {
+      "name": "testing-library-react",
+      "weight": 4,
+      "repos": [
+        "tic-tac-toe"
+      ]
+    },
+    {
+      "name": "tic-tac-toe-game",
+      "weight": 4,
+      "repos": [
+        "tic-tac-toe"
+      ]
+    },
+    {
+      "name": "mongodb",
+      "weight": 3,
+      "repos": [
+        "dowpro-replay-watcher-dal",
+        "KuBot",
+        "kubot-dal",
+        "mongodb-generic-dal",
+        "together-api",
+        "vacations-manager"
+      ]
+    },
+    {
+      "name": "effect-layer",
+      "weight": 3,
+      "repos": [
+        "effect-github-stats",
+        "effect-octokit-layer"
+      ]
+    },
+    {
+      "name": "octokit",
+      "weight": 3,
+      "repos": [
+        "effect-github-stats",
+        "effect-octokit-layer",
+        "github-profile-stats"
+      ]
+    },
+    {
+      "name": "coverage-badges",
+      "weight": 3,
+      "repos": [
+        "node-coverage-badges"
+      ]
+    },
+    {
+      "name": "readme",
+      "weight": 3,
+      "repos": [
+        "readme-package-icons"
+      ]
+    },
+    {
+      "name": "dawn-of-war",
+      "weight": 3,
+      "repos": [
+        "relic-chunky-parser"
+      ]
+    },
+    {
+      "name": "relic-chunky",
+      "weight": 3,
+      "repos": [
+        "relic-chunky-parser"
+      ]
+    },
+    {
+      "name": "mockapi",
+      "weight": 3,
+      "repos": [
+        "together"
+      ]
+    },
+    {
+      "name": "react-testing-library",
+      "weight": 3,
+      "repos": [
+        "together"
+      ]
+    },
+    {
+      "name": "frontend-testing",
+      "weight": 3,
+      "repos": [
+        "workshop-react-fcs"
+      ]
+    },
+    {
+      "name": "react-class-components",
+      "weight": 3,
+      "repos": [
+        "workshop-react-fcs"
+      ]
+    },
+    {
+      "name": "react-functional-components",
+      "weight": 3,
+      "repos": [
+        "workshop-react-fcs"
+      ]
+    },
+    {
+      "name": "discord-bot",
+      "weight": 2,
+      "repos": [
+        "crevette-bot-ts",
+        "crevetteBot",
+        "KuBot",
+        "kuBot-ts"
+      ]
+    },
+    {
+      "name": "discord-js",
+      "weight": 2,
+      "repos": [
+        "crevette-bot-ts",
+        "crevetteBot",
+        "KuBot"
+      ]
+    },
+    {
+      "name": "sqlite",
+      "weight": 2,
+      "repos": [
+        "crevetteBot"
+      ]
+    },
+    {
+      "name": "deploy-tool",
+      "weight": 2,
+      "repos": [
+        "debian-node-deploy"
+      ]
+    },
+    {
+      "name": "devops",
+      "weight": 2,
+      "repos": [
+        "debian-node-deploy"
+      ]
+    },
+    {
+      "name": "ssh",
+      "weight": 2,
+      "repos": [
+        "debian-node-deploy"
+      ]
+    },
+    {
+      "name": "github-api",
+      "weight": 2,
+      "repos": [
+        "github-lookup"
+      ]
+    },
+    {
+      "name": "panda-css",
+      "weight": 2,
+      "repos": [
+        "remix-effect-errors"
+      ]
+    },
+    {
+      "name": "remix",
+      "weight": 2,
+      "repos": [
+        "remix-effect-errors"
+      ]
+    },
+    {
+      "name": "atomic-design",
+      "weight": 2,
+      "repos": [
+        "test-storybook-msw"
+      ]
+    },
+    {
+      "name": "storybook",
+      "weight": 2,
+      "repos": [
+        "test-storybook-msw"
+      ]
+    },
+    {
+      "name": "entity-framework",
+      "weight": 1,
+      "repos": [
+        "Archi.Net-DBaseModels",
+        "ErrorsReporting.Net",
+        "imgBoard"
+      ]
+    },
+    {
+      "name": "moq",
+      "weight": 1,
+      "repos": [
+        "Archi.Net-DBaseModels",
+        "ErrorsReporting.Net",
+        "imgBoard"
+      ]
+    },
+    {
+      "name": "nunit",
+      "weight": 1,
+      "repos": [
+        "Archi.Net-DBaseModels",
+        "ErrorsReporting.Net",
+        "imgBoard"
+      ]
+    },
+    {
+      "name": "simpleinjector",
+      "weight": 1,
+      "repos": [
+        "Archi.Net-DBaseModels"
+      ]
+    },
+    {
+      "name": "auth0",
+      "weight": 1,
+      "repos": [
+        "auth0-silent-login"
+      ]
+    },
+    {
+      "name": "feature-request",
+      "weight": 1,
+      "repos": [
+        "auth0-silent-login"
+      ]
+    },
+    {
+      "name": "reproduction",
+      "weight": 1,
+      "repos": [
+        "auth0-silent-login",
+        "next-repro-404-index.json"
+      ]
+    },
+    {
+      "name": "silent-login-flow",
+      "weight": 1,
+      "repos": [
+        "auth0-silent-login"
+      ]
+    },
+    {
+      "name": "flux",
+      "weight": 1,
+      "repos": [
+        "courses-management-flux-sandbox"
+      ]
+    },
+    {
+      "name": "dowpro",
+      "weight": 1,
+      "repos": [
+        "crevette-bot-ts",
+        "dowpro-replay-watcher-api",
+        "dowpro-replay-watcher-dal",
+        "dowpro-replays-watcher",
+        "DowProInstaller"
+      ]
+    },
+    {
+      "name": "dll",
+      "weight": 1,
+      "repos": [
+        "DiscoDataRetriever"
+      ]
+    },
+    {
+      "name": "freelancer",
+      "weight": 1,
+      "repos": [
+        "DiscoDataRetriever"
+      ]
+    },
+    {
+      "name": "ini-parser",
+      "weight": 1,
+      "repos": [
+        "DiscoDataRetriever"
+      ]
+    },
+    {
+      "name": "xml-parser",
+      "weight": 1,
+      "repos": [
+        "DiscoDataRetriever"
+      ]
+    },
+    {
+      "name": "csharp",
+      "weight": 1,
+      "repos": [
+        "dowpro-replays-watcher"
+      ]
+    },
+    {
+      "name": "windows-service",
+      "weight": 1,
+      "repos": [
+        "dowpro-replays-watcher"
+      ]
+    },
+    {
+      "name": "github-stats",
+      "weight": 1,
+      "repos": [
+        "effect-github-stats",
+        "github-profile-stats"
+      ]
+    },
+    {
+      "name": "readme-profile",
+      "weight": 1,
+      "repos": [
+        "jpb06"
+      ]
+    },
+    {
+      "name": "message-broker",
+      "weight": 1,
+      "repos": [
+        "node-message-broker"
+      ]
+    },
+    {
+      "name": "rabbitmq",
+      "weight": 1,
+      "repos": [
+        "node-message-broker"
+      ]
+    },
+    {
+      "name": "mongoose",
+      "weight": 1,
+      "repos": [
+        "rsa-vault"
+      ]
+    },
+    {
+      "name": "rsa-cryptography",
+      "weight": 1,
+      "repos": [
+        "rsa-vault"
+      ]
+    },
+    {
+      "name": "typegoose",
+      "weight": 1,
+      "repos": [
+        "rsa-vault"
+      ]
+    },
+    {
+      "name": "gulpjs",
+      "weight": 0,
+      "repos": [
+        "crevette-bot-ts"
+      ]
+    },
+    {
+      "name": "app-folder",
+      "weight": 0,
+      "repos": [
+        "dev-friends-app-folder"
+      ]
+    },
+    {
+      "name": "jotai",
+      "weight": 0,
+      "repos": [
+        "dev-friends-app-folder"
+      ]
+    },
+    {
+      "name": "server-components",
+      "weight": 0,
+      "repos": [
+        "dev-friends-app-folder"
+      ]
+    },
+    {
+      "name": "taiwindcss",
+      "weight": 0,
+      "repos": [
+        "dev-friends-app-folder"
+      ]
+    },
+    {
+      "name": "express-js",
+      "weight": 0,
+      "repos": [
+        "dowpro-replay-watcher-api",
+        "together-api"
+      ]
+    },
+    {
+      "name": "jsonwebtokens",
+      "weight": 0,
+      "repos": [
+        "dowpro-replay-watcher-api"
+      ]
+    },
+    {
+      "name": "lua",
+      "weight": 0,
+      "repos": [
+        "dowproHook"
+      ]
+    },
+    {
+      "name": "socket-programming",
+      "weight": 0,
+      "repos": [
+        "dowproHook"
+      ]
+    },
+    {
+      "name": "win32",
+      "weight": 0,
+      "repos": [
+        "dowproHook"
+      ]
+    },
+    {
+      "name": "windows-registry",
+      "weight": 0,
+      "repos": [
+        "dowproHook"
+      ]
+    },
+    {
+      "name": "zlib",
+      "weight": 0,
+      "repos": [
+        "dowproHook"
+      ]
+    },
+    {
+      "name": "nsis-installer",
+      "weight": 0,
+      "repos": [
+        "DowProInstaller"
+      ]
+    },
+    {
+      "name": "nsis-language",
+      "weight": 0,
+      "repos": [
+        "DowProInstaller"
+      ]
+    },
+    {
+      "name": "unity",
+      "weight": 0,
+      "repos": [
+        "ErrorsReporting.Net",
+        "imgBoard"
+      ]
+    },
+    {
+      "name": "knockoutjs",
+      "weight": 0,
+      "repos": [
+        "imgBoard"
+      ]
+    },
+    {
+      "name": "mvc5",
+      "weight": 0,
+      "repos": [
+        "imgBoard"
+      ]
+    },
+    {
+      "name": "data",
+      "weight": 0,
+      "repos": [
+        "kubot-dal"
+      ]
+    },
+    {
+      "name": "gulp-tasks",
+      "weight": 0,
+      "repos": [
+        "kubot-dal"
+      ]
+    },
+    {
+      "name": "discordjs",
+      "weight": 0,
+      "repos": [
+        "kuBot-ts"
+      ]
+    },
+    {
+      "name": "bootstrap",
+      "weight": 0,
+      "repos": [
+        "kubot-website-express"
+      ]
+    },
+    {
+      "name": "express",
+      "weight": 0,
+      "repos": [
+        "kubot-website-express",
+        "kubot-ws-api"
+      ]
+    },
+    {
+      "name": "pug",
+      "weight": 0,
+      "repos": [
+        "kubot-website-express"
+      ]
+    },
+    {
+      "name": "webpack",
+      "weight": 0,
+      "repos": [
+        "kubot-website-express",
+        "webpack-vue-starter"
+      ]
+    },
+    {
+      "name": "angular-cli",
+      "weight": 0,
+      "repos": [
+        "kubot-ws-angular"
+      ]
+    },
+    {
+      "name": "angular6",
+      "weight": 0,
+      "repos": [
+        "kubot-ws-angular"
+      ]
+    },
+    {
+      "name": "angularjs",
+      "weight": 0,
+      "repos": [
+        "kubot-ws-angular"
+      ]
+    },
+    {
+      "name": "bootstrap4",
+      "weight": 0,
+      "repos": [
+        "kubot-ws-angular"
+      ]
+    },
+    {
+      "name": "api-server",
+      "weight": 0,
+      "repos": [
+        "kubot-ws-api",
+        "together-api"
+      ]
+    },
+    {
+      "name": "jwt-authentication",
+      "weight": 0,
+      "repos": [
+        "kubot-ws-api"
+      ]
+    },
+    {
+      "name": "basepath",
+      "weight": 0,
+      "repos": [
+        "next-repro-404-index.json"
+      ]
+    },
+    {
+      "name": "next-js",
+      "weight": 0,
+      "repos": [
+        "next-repro-404-index.json"
+      ]
+    },
+    {
+      "name": "pages-router-nextjs",
+      "weight": 0,
+      "repos": [
+        "next-repro-404-index.json"
+      ]
+    },
+    {
+      "name": "boilerplate-template",
+      "weight": 0,
+      "repos": [
+        "nuxt-ts-jest-starter"
+      ]
+    },
+    {
+      "name": "eslint",
+      "weight": 0,
+      "repos": [
+        "nuxt-ts-jest-starter"
+      ]
+    },
+    {
+      "name": "nuxt",
+      "weight": 0,
+      "repos": [
+        "nuxt-ts-jest-starter"
+      ]
+    },
+    {
+      "name": "minify",
+      "weight": 0,
+      "repos": [
+        "together-js"
+      ]
+    },
+    {
+      "name": "path-resolution",
+      "weight": 0,
+      "repos": [
+        "ts-paths-resolver"
+      ]
+    },
+    {
+      "name": "typescript-paths",
+      "weight": 0,
+      "repos": [
+        "ts-paths-resolver"
+      ]
+    },
+    {
+      "name": "boilerplate",
+      "weight": 0,
+      "repos": [
+        "webpack-vue-starter"
+      ]
+    },
+    {
+      "name": "vuejs",
+      "weight": 0,
+      "repos": [
+        "webpack-vue-starter"
+      ]
+    }
+  ],
+  "social": {
+    "following": 51,
+    "followers": 31,
+    "stargazers": 227,
+    "watchers": 227,
+    "orgs": 0,
+    "comments": 24,
+    "reactions": {
+      "total_count": 53,
+      "+1": 29,
+      "-1": 3,
+      "laugh": 0,
+      "confused": 1,
+      "heart": 14,
+      "hooray": 1,
+      "eyes": 1,
+      "rocket": 4
+    }
+  },
+  "git": {
+    "publicRepos": 113,
+    "publicGists": 6,
+    "tags": 873,
+    "commits": 7018,
+    "forks": 50,
+    "issues": {
+      "closed": 7,
+      "opened": 3
+    },
+    "pullRequests": {
+      "opened": 6,
+      "closed": 52,
+      "drafts": 10,
+      "merged": 1946,
+      "reviewed": 2857
+    },
+    "releases": 338
+  },
+  "date": "2025-10-19T12:03:20+02:00"
+}

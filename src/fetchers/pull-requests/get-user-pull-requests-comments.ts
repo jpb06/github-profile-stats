@@ -1,9 +1,5 @@
 import { Console, Effect, pipe } from 'effect';
-import {
-  type EffectResultSuccess,
-  OctokitLayer,
-  type RepoArgs,
-} from 'effect-octokit-layer';
+import { type EffectResultSuccess, OctokitLayer } from 'effect-octokit-layer';
 import colors from 'picocolors';
 
 import { mergeEventsReactions } from '../../reactions/merge-events-reactions.js';
@@ -14,33 +10,46 @@ export type GetUserPullRequestsCommentsResult = EffectResultSuccess<
 
 export const getUserPullRequestsComments = (
   username: string,
-  repos: RepoArgs[],
   verbose: boolean,
 ) =>
   pipe(
     Effect.gen(function* () {
-      const userComments = yield* pipe(
-        Effect.forEach(repos, (repo) =>
+      const userPullRequests = yield* OctokitLayer.user(username).searchIssues(
+        'is:pr',
+        false,
+        1,
+      );
+
+      const userComments = yield* Effect.forEach(
+        userPullRequests.data,
+        (pull) =>
           Effect.gen(function* () {
-            const { pulls } = OctokitLayer.repo(repo);
+            const [owner, repo] = pull.repository_url.split('/').slice(-2);
 
             if (verbose) {
               yield* Console.info(
-                `- ℹ️  Getting pull requests comments for ${colors.greenBright(`${repo.owner}/${repo.repo}`)}.`,
+                `- ℹ️  Getting ${colors.greenBright(`${owner}/${repo}`)} pull request ${pull.number} comments.`,
               );
             }
-            const repoPullsRequestsComments = yield* pulls.comments(2);
-            return repoPullsRequestsComments.filter(
-              (comment) => comment.user.login === username,
+            const comments = yield* OctokitLayer.repo({
+              owner,
+              repo,
+            })
+              .issue(pull.number)
+              .comments(1);
+
+            return comments.filter(
+              (comment) => comment.user?.login === username,
             );
           }),
-        ),
       );
 
-      const allComments = userComments.flat();
-      const reactions = mergeEventsReactions(allComments);
+      const comments = userComments.flat();
 
-      return { reactions, comments: allComments };
+      return {
+        comments,
+        reactions: mergeEventsReactions(comments),
+      };
     }),
     Console.withTime(
       `☑️  Fetching ${colors.greenBright(username)} pull requests comments`,

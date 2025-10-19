@@ -33,14 +33,7 @@ export const getUserStats = (username: string, verbose = false) =>
       const releases = yield* getReposReleases(userRepos, verbose);
 
       const { comments, reactions: commentsReactions } =
-        yield* getUserPullRequestsComments(
-          username,
-          userRepos.map(({ owner, name }) => ({
-            owner: owner.login,
-            repo: name,
-          })),
-          verbose,
-        );
+        yield* getUserPullRequestsComments(username, verbose);
 
       const reactions = mergeReactions([commentsReactions, issuesReactions]);
 

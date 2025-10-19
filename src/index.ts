@@ -8,7 +8,7 @@ import { getUserStats } from './workflow/get-user-stats.js';
 
 await runPromise(
   pipe(
-    getUserStats('jpb06'),
+    getUserStats('jpb06', true),
     Effect.provide(
       Layer.mergeAll(
         NodeContext.layer,

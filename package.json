@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@effect/platform": "0.92.1",
-    "@effect/platform-node": "0.98.3",
+    "@effect/platform-node": "0.98.4",
     "date-fns": "4.1.0",
     "effect": "3.18.4",
     "effect-errors": "1.10.17",
@@ -22,9 +22,9 @@
     "picocolors": "1.1.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.5",
+    "@biomejs/biome": "2.2.6",
     "@types/bun": "latest",
-    "npm-check-updates": "19.0.0",
+    "npm-check-updates": "19.1.1",
     "readme-package-icons": "1.2.2",
     "typescript": "5.9.3"
   },

@@ -11,7 +11,7 @@ export const getUserIssues = (username: string, verbose: boolean) =>
     Effect.gen(function* () {
       const issuesInvolvingUser = yield* OctokitLayer.user(
         username,
-      ).searchIssues('', false, 1);
+      ).searchIssues('is:issue', false, 1);
       const userIssues = issuesInvolvingUser.data.filter(
         (issue) => issue.user?.login === username,
       );

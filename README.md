@@ -15,7 +15,7 @@ Fetching user activity on github using an effect layer relying on octokit.
 ## ⚡ Output type
 
 ```ts
-type Topic = { name: string; count: number };
+type Topic = { name: string; repos: string[]; weight: number };
 
 type LanguagesBytes = Record<string, number>;
 
