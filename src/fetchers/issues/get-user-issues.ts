@@ -11,9 +11,12 @@ export const getUserIssues = (username: string, verbose: boolean) =>
     Effect.gen(function* () {
       const issuesInvolvingUser = yield* OctokitLayer.user(
         username,
-      ).searchIssues('is:issue', false, 1);
+      ).searchIssues('issue', '', false, 1);
       const userIssues = issuesInvolvingUser.data.filter(
         (issue) => issue.user?.login === username,
+      );
+      yield* Console.info(
+        `⏺️  Found ${issuesInvolvingUser.count} issues involving user.`,
       );
 
       const userComments = yield* Effect.forEach(

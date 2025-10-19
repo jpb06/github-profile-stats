@@ -17,7 +17,7 @@
     "date-fns": "4.1.0",
     "effect": "3.18.4",
     "effect-errors": "1.10.17",
-    "effect-octokit-layer": "1.14.0",
+    "effect-octokit-layer": "1.15.0",
     "jsondiffpatch": "0.7.3",
     "picocolors": "1.1.1"
   },

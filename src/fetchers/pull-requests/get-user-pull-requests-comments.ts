@@ -15,9 +15,13 @@ export const getUserPullRequestsComments = (
   pipe(
     Effect.gen(function* () {
       const userPullRequests = yield* OctokitLayer.user(username).searchIssues(
-        'is:pr',
+        'pr',
+        '',
         false,
         1,
+      );
+      yield* Console.info(
+        `⏺️  Found ${userPullRequests.count} pull requests involving user.`,
       );
 
       const userComments = yield* Effect.forEach(

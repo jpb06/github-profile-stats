@@ -32,10 +32,13 @@ export const getUserStats = (username: string, verbose = false) =>
       const tags = yield* getReposTags(userRepos, verbose);
       const releases = yield* getReposReleases(userRepos, verbose);
 
-      const { comments, reactions: commentsReactions } =
+      const { comments, reactions: pullRequestsReactions } =
         yield* getUserPullRequestsComments(username, verbose);
 
-      const reactions = mergeReactions([commentsReactions, issuesReactions]);
+      const reactions = mergeReactions([
+        pullRequestsReactions,
+        issuesReactions,
+      ]);
 
       const stats = mapUserStats({
         profile,

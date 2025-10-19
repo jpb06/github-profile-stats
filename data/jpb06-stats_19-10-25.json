@@ -3,11 +3,11 @@
   "onGithubSince": "2013-03-08T12:48:59Z",
   "location": "Νίκαια",
   "company": "@posos-tech",
-  "sizeInKb": 402193,
+  "sizeInKb": 402200,
   "bytesByLanguage": [
     {
       "language": "TypeScript",
-      "bytes": 4196120
+      "bytes": 4197162
     },
     {
       "language": "C#",
@@ -1235,24 +1235,24 @@
     "stargazers": 227,
     "watchers": 227,
     "orgs": 0,
-    "comments": 24,
+    "comments": 11,
     "reactions": {
-      "total_count": 53,
+      "total_count": 52,
       "+1": 29,
       "-1": 3,
-      "laugh": 0,
+      "laugh": 1,
       "confused": 1,
-      "heart": 14,
-      "hooray": 1,
-      "eyes": 1,
+      "heart": 10,
+      "hooray": 2,
+      "eyes": 2,
       "rocket": 4
     }
   },
   "git": {
     "publicRepos": 113,
     "publicGists": 6,
-    "tags": 873,
-    "commits": 7018,
+    "tags": 874,
+    "commits": 7021,
     "forks": 50,
     "issues": {
       "closed": 7,
@@ -1262,10 +1262,10 @@
       "opened": 6,
       "closed": 52,
       "drafts": 10,
-      "merged": 1946,
-      "reviewed": 2857
+      "merged": 1947,
+      "reviewed": 2862
     },
-    "releases": 338
+    "releases": 339
   },
-  "date": "2025-10-19T12:03:20+02:00"
+  "date": "2025-10-19T16:27:22+02:00"
 }

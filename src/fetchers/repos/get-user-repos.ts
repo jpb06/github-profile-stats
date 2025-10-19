@@ -15,6 +15,7 @@ export const getUserRepos = (username: string) =>
       const userRepos = allRepos.filter(
         (repo) => repo.owner.login === username && repo.fork === false,
       );
+      yield* Console.info(`⏺️  Found ${userRepos.length} repositories.`);
       const userReposStats = mapUserReposResult(userRepos);
 
       return {
